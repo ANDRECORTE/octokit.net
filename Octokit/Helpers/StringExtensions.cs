@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
-using System.Reflection;
+using System.Net;
 using System.Text.RegularExpressions;
 
 namespace Octokit
@@ -28,7 +28,7 @@ namespace Octokit
 
         public static string UriEncode(this string input)
         {
-            return System.Net.WebUtility.UrlEncode(input);
+            return WebUtility.UrlEncode(input);
         }
 
         static readonly Regex _optionalQueryStringRegex = new Regex("\\{\\?([^}]+)\\}");
