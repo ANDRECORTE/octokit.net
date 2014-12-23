@@ -351,6 +351,7 @@
     <Compile Include="Models\Response\ThreadSubscription.cs" />
     <Compile Include="Models\Request\MarkAsReadRequest.cs" />
     <Compile Include="Models\Request\NewThreadSubscription.cs" />
+    <Compile Include="Helpers\ApiUrls.Authorizations.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
 </Project>
